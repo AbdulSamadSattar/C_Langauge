@@ -10,7 +10,8 @@ public:
 
 class Child : public Parent {
 public:
-    void show() {
+    void show()//override //noerror 
+    {
         cout << "This is Child class" << endl;
     }
 };
@@ -22,5 +23,8 @@ int main() {
     ptr = &obj;
     ptr->show();   // Calls Child's function
 
+    // Parent objP;
+    // Parent* newptr = &objP;   // points to an actual Parent object
+    // newptr->show();           // Output: This is Parent class
     return 0;
 }

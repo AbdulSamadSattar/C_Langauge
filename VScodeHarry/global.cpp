@@ -7,6 +7,7 @@ void function(){
     cout<<"global value = "<< glo<<endl;
 }
 int main(){
+    hello();
     function();
     int local, glo=9;
     local = 20;
