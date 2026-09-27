@@ -30,3 +30,8 @@ int main() {
     // and dereferencing it would be undefined behavior.
     return 0;
 }
+// OUTPUT:
+// 15 20
+
+// Address ptr: 0xf979a8
+// Value *ptr: 5

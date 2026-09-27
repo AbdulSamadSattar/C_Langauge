@@ -18,3 +18,5 @@ int main() {
     b.show();
     return 0;
 }
+// OUTPUT:
+// Side: 7

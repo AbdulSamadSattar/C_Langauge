@@ -15,3 +15,6 @@ int main(){
     return 0;
 }
 
+// Output:
+// 10
+// 20

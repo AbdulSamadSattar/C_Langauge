@@ -23,8 +23,11 @@ int main() {
     ptr = &obj;
     ptr->show();   // Calls Child's function
 
-    // Parent objP;
-    // Parent* newptr = &objP;   // points to an actual Parent object
-    // newptr->show();           // Output: This is Parent class
+    Parent objP;
+    Parent* newptr = &objP;   // points to an actual Parent object
+    newptr->show();           // Output: This is Parent class
     return 0;
 }
+// Output:
+// This is Child class
+// This is Parent class

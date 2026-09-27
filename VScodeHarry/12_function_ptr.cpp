@@ -10,3 +10,5 @@ int main() {
     funcPtr();                    // calls greet()
     return 0;
 }
+// OUTPUT:
+// Hello from function!

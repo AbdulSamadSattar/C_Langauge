@@ -21,3 +21,14 @@ int main(){
     cout << "The value of stored in *ptr is "<< *ptr << endl;
     return 0;
 }
+
+// OUTPUT:
+// The address a is 0x7fff5fbff6ac
+// The address ptr is 0x7fff5fbff6a0
+// The address of c is 0x7fff5fbff698
+// The value of a is 3
+// The value of ptr is 0x7fff5fbff6ac
+// The value of c is 0x7fff5fbff6a0
+// The value of stored in **c is 3
+// The adress stored in *c is 0x7fff5fbff6ac
+// The value of stored in *ptr is 3

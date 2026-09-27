@@ -7,5 +7,9 @@ struct PrintMessage {
     }
 };
 
-PrintMessage obj1;
+PrintMessage obj1; // Global object of PrintMessage, constructor runs before main
 int main(){}
+
+
+// OUTPUT:
+//Hello, world! (Printed before main)

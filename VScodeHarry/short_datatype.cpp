@@ -16,3 +16,7 @@ main()
  std::cout << z<<endl;
  std::cout << "Size of short: "<<sizeof(x) <<endl << "size of int: " << sizeof(int(x));
 }
+// Output:
+// x = 5 y=10 z = x + y = 15
+// Size of short: 2
+// size of int: 4

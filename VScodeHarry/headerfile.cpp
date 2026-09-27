@@ -5,3 +5,5 @@ int main(){
     hello();
     return 0;
 }
+// Output:
+// Hello from header file!

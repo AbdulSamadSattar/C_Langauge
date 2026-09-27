@@ -17,3 +17,4 @@ int main() {
     delete ptr;
     return 0;
 }
+// Output: 10

@@ -4,7 +4,8 @@ class A{
     int a;
     public:
         void setData(int a1){
-            a = a1; 
+            a = a1;
+            //void setData(int a){
             // a = a; //Functions run but garbage value
         }
         void getData(){
@@ -17,4 +18,5 @@ int main(){
     a.getData();
     return 0;
 }
-
+// Output:
+// The value of a is 4

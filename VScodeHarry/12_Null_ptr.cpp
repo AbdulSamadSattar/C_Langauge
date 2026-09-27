@@ -13,3 +13,9 @@ int main(){
     return 0;
 }
 // \n--**Null Pointer**--\n"
+// output:
+// 0
+// 0x61ff0c
+// ptr : 0
+// &ptr: 0x61ff0c
+// *ptr: 

@@ -9,3 +9,5 @@ int main() {
     cout << "Value: " << **ptr2 << endl;   // dereference twice
     return 0;
 }
+// OUTPUT:
+// Value: 100

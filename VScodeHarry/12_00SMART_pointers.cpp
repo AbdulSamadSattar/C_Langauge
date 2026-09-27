@@ -1,5 +1,5 @@
 #include <iostream>
-#include <memory>
+#include <memory> // For smart pointers
 using namespace std;
 
 class Demo {
@@ -29,3 +29,14 @@ int main() {
 
     return 0;
 }   // all memory automatically freed here — no delete needed
+
+//OUTPUT:
+// Constructed
+// Hello from Demo
+// Constructed
+// Use count: 2
+// Hello from Demo
+// Constructed
+// Destroyed
+// Destroyed
+// Destroyed
