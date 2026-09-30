@@ -26,4 +26,5 @@ int main(){
     s.printData();
     return 0;
 }
-// Output: The value of data1, data2 and data3 is 12, 13 and 8
+// Output: 
+// The value of data1, data2 and data3 is 12, 13 and 8
