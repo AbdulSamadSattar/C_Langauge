@@ -1,41 +1,71 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
-int fib(int n){
-    if(n<2){
-        return 1;
-    }
-    return fib(n-2) + fib(n-1);
+class binary
+{
+private:
+    string s;
+    void chk_bin(void);
+
+public:
+    void read(void);
+    void ones_compliment(void);
+    void display(void);
+};
+
+void binary::read(void)
+{
+    cout << "Enter a binary number" << endl;
+    cin >> s;
 }
 
-// fib(5)
-// fib(4) + fib(3)
-// fib(2) + fib(3) + fib(2) + fib(3)
-
-int factorial(int n){
-    if (n<=1){
-        return 1;
+void binary::chk_bin(void)
+{
+    for (int i = 0; i < s.length(); i++)
+    {
+        if (s.at(i) != '0' && s.at(i) != '1')
+        {
+            cout << "Incorrect binary format" << endl;
+            exit(0);
+        }
     }
-    return n * factorial(n-1);
 }
 
-// Step by step calculation of factorial(4)
-// factorial(4) = 4 * factorial(3); 
-// factorial(4) = 4 * 3 * factorial(2);
-// factorial(4) = 4 * 3 * 2 * factorial(1);
-// factorial(4) = 4 * 3 * 2 * 1;
-// factorial(4) = 24;
+void binary::ones_compliment(void)
+{
+    chk_bin();
+    for (int i = 0; i < s.length(); i++)
+    {
+        if (s.at(i) == '0')
+        {
+            s.at(i) = '1';
+        }
+       else
+        {
+            s.at(i) = '0';
+        }
+    }
+}
 
-int main(){
-    // Factorial of a number:
-    // 6! = 6*5*4*3*2*1 = 720
-    // 0! = 1 by definition
-    // 1! = 1 by definition
-    // n! = n * (n-1)!
-    int a;
-    cout<<"Enter a number"<<endl;
-    cin>>a;
-    // cout<<"The factorial of "<<a<< " is "<<factorial(a)<<endl;
-    cout<<"The term in fibonacci sequence at position "<<a<< " is "<<fib(a)<<endl;
+void binary::display(void)
+{
+    cout<<"Displaying your binary number"<<endl;
+    for (int i = 0; i < s.length(); i++)
+    {
+        cout << s.at(i);
+    }
+    cout<<endl;
+}
+
+int main()
+{
+    binary b;
+    b.read();
+    // b.chk_bin();
+    b.display();
+    b.ones_compliment();
+    b.display();
+
     return 0;
 }

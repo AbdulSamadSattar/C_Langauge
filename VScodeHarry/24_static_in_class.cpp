@@ -1,10 +1,15 @@
+// Without static it is object variable, every time counts return 1, With static it is class variable
+// In class, static variable cannot initialized there will be an error,
+// But can initialized with any number outside the class
+// Static function is used to utilize static variables
+// Direct access with class names
 #include <iostream>
 using namespace std;
 
 class Employee
 {
     int id;
-    static int count;
+    static int count; // static variable, will be shared by all objects of class Employee
 
 public:
     void setData(void)
