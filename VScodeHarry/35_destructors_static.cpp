@@ -5,7 +5,7 @@ using namespace std;
 // int count=0;
 
 class num{
-    static int count; // always initialize static variables outside the class
+    static int count; // always initialize static variables outside the class. If not static then it will be initialized for every object and will not be shared among all the objects. So, it will always be 1 for every object.
     public:
         num(){
             count++;
