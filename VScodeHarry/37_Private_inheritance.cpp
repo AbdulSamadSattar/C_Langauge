@@ -16,7 +16,7 @@ public:
 };
 
 // Creating a Programmer class derived from Employee Base class// Private members of base class are not inherited
-class Programmer : public Employee// Public members of base class are now being inherited as public members of derived class
+class Programmer : Employee// Public members of base class are now being inherited as public members of derived class
 {
 public: 
     int languageCode;
@@ -36,7 +36,7 @@ int main()
     cout << rohan.salary << endl;
     Programmer skillF(10); 
     cout << skillF.languageCode<<endl;
-    cout << skillF.id<<endl;
+    // cout << skillF.id<<endl; // This line will cause an error because 'id' is inherited as private due to private inheritance
     skillF.getData();
     return 0;
 }
